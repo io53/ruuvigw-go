@@ -15,7 +15,6 @@ func connectToInflux() {
 func writePoint(point *write.Point) {
 	writeAPI := dbClient.WriteAPI(appConfig.InfluxOrg, appConfig.InfluxBucket)
 	writeAPI.WritePoint(point)
-	writeAPI.Flush()
 }
 func insertRaw2(gwip string, gwmac string, mac string, rssi int, data ruuvitag.RAWv2) {
 	writePoint(influxdb2.NewPointWithMeasurement("stat").
