@@ -1,0 +1,7 @@
+influxHost: http://localhost:8086
+influxToken: CvaoUWI7j_UyQKUcMqFR31c9TqtHj2CF0wK6mJwIjPViCPo1sSAmVLoVm1IuCHt7piheBtPvLTlA8j6cpJ8I4w==
+influxBucket: ruuviBucket
+influxOrg: ruuviOrg
+pollInterval: 2
+gatewayIPs:
+  - "10.99.20.159"
