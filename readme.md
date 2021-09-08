@@ -29,4 +29,4 @@ gatewayIPs:
 
 ## Run it!
 
-`docker run --name ruuvigw-go -d --net=host ruuvigw-go:latest`
+`docker run --name ruuvigw-go --restart unless-stopped -d --net=host ruuvigw-go:latest`
